@@ -9,17 +9,36 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Bekary</title>
   </head>
   <body>
-    <div class="page">
-      <nav>
+
+          <!-- 
+        You should make a menu bar like this
+        1 -
+        CHECK OUT the link to learn how is going
+        >> for menu bar
+        https://www.youtube.com/watch?v=FhjyRg-LYKc&t=44s
+        and remove section 'page'
+        
+        2-
+        you should make in footer section social links 
+        >> facebook >> linkedin >> twitter >> whats app
+
+        "by the way you doing good keep it up and keep interssting"
+        thanks 
+      -->
+
+
+
+   
+      <!-- <nav>
         <ul style="color:#010B40;">
           <li><a href="#"  >ABOUT</a></li>
           <li><a href="#">MENU</a></li>
@@ -29,20 +48,36 @@
           <li><a href="#">FAQ</a></li>
           <li><a href="#">ORDER</a></li>
         </ul>
-      </nav>
+      </nav> -->
+      <!-- start of navbar -->
+      <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">SWEET BAKE SHOP</div>
+        <ul class="links">
+          <li><a href="#"  >ABOUT</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="./signin/index.html">SIGNIN</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+      <!-- end of navbar -->
+
       <!-- start of home -->
       <section class="home">
-        <div>
+        <div >
          
             <h1 class="home-head">
               BESPOKE HOME <br />
               BAKING
             </h1>
-         
-          <!-- <h1 class="home-head"   >
-            BESPOKE 
-            BAKING
-          </h1> -->
          
             <p class="home-caption">
               Adding a sprinkle of joy to your celebtations!
@@ -75,7 +110,7 @@
               <button class="about-but">THE GALLERY</button>
           </div>
           <div class="serv-item">
-            <img class="zoom" style="height: 51vh" src="img/download (12).jpeg">
+            <img class="zoom" src="img/download (12).jpeg">
             <h3>NEED A CAKE?</h3>
               <p>Vanilla, chocolate ,carrot...and so many <br>much </p>
               <button class="about-but">ORDER</button>
@@ -93,13 +128,11 @@
       <section class="instagram">
         <div><h3>FOLLOW US ON INSTAGRAM</h3></div>
         <div>
-        <img src="img/images (32).png">
-        <img src="img/images (35).png">
-        <img src="img/images (31).png">
-        <img src="img/images (12).png">
-        <img src="img/image33.png"> 
-       
-       
+        <img src="img/images (32).png" style="border-radius: 8px; padding-left: 20px;">
+        <img src="img/images (35).png" style="border-radius: 8px; padding-left: 20px;">
+        <img src="img/images (31).png" style="border-radius: 8px; padding-left: 20px;">
+        <img src="img/images (12).png" style="border-radius: 8px; padding-left: 20px;">
+        <img src="img/image33.png" style="border-radius: 8px; padding-left: 20px;"> 
 
         </div>
         <div class="insta-item">
@@ -113,13 +146,19 @@
           </div>
           <div class="insta-cap">
             <p>KEEP IN TOUCH</p>
-            <i class="fab fa-instagram"></i>
-            <i class="far fa-envelope"></i>
+            <div class="social-links">
+              <a href="https://ar-ar.facebook.com/" style="color:black ;"><i class="fab fa-facebook-square"></i></a>  
+            <a href="https://www.instagram.com/" style="color:black ;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" style="color:black ;"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/login?lang=ar" style="color:black ;"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://web.whatsapp.com/" style="color:black ;"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+          
           </div>
          
         </div>
         
-        <button class="blog-btn">SIGN UP HERE!</button>
+        <a href="./register/index.html" class="blog-btn">SIGN UP HERE!</a>
 
       
       </section>
@@ -131,7 +170,9 @@
           <li><a href="#" class="foot-link">LEGAL</a></li>
           <li><a href="#" class="foot-link">ORDER</a></li>
         </ul>
+
+        
       </footer>
-    </div>
+    
   </body>
 </html>
